@@ -1,0 +1,52 @@
+<?xml version= "1.0"?>
+<grammar tag-format="semantics/1.0" version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar">
+	<rule id="_class_family" scope="public">
+		<item>
+			<ruleref uri="./family.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_family" });
+		</tag>
+	</rule>
+	<rule id="_class_united_states" scope="public">
+		<item>
+			<ruleref uri="./united_states.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_united_states" });
+		</tag>
+	</rule>
+	<rule id="_class_number" scope="public">
+		<item>
+			<ruleref uri="./number.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_number" });
+		</tag>
+	</rule>
+	<rule id="_class_date" scope="public">
+		<item>
+			<ruleref uri="./date.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_date" });
+		</tag>
+	</rule>
+	<rule id="_class_currency" scope="public">
+		<item>
+			<ruleref uri="./currency.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_currency" });
+		</tag>
+	</rule>
+	<rule id="_class_location_domestic" scope="public">
+		<item>
+			<ruleref uri="./location_domestic.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_location_domestic" });
+		</tag>
+	</rule>
+	<rule id="_class_location_international" scope="public">
+		<item>
+			<ruleref uri="./location_international.grxml"/>
+		</item>
+		<tag>gSubstitutions.push({interpretation: rules.latest(),tokens: meta.latest().text,klass: "_class_location_international" });
+		</tag>
+	</rule>
+</grammar>

@@ -1,0 +1,20 @@
+tag,transcription,filename
+none-none,what is the weather,0
+drama,drama,1
+drama,movie drama,2
+drama,Avezvous un film dramatique,3
+comedy,comedy,4
+comedy,movie comedy,5
+comedy,Avezvous un film de comdie dt,6
+comedy,Je veux de la comdie,7
+movie,which movie,8
+movie,what movie do you want,9
+movie,Quels films avezvous,10
+hello-social,Good day,11
+hello-social,Good afternoon,12
+hello-social,Good evening,13
+hello-social,hi,14
+hello-social,hello,15
+hello-social,Bonjour,16
+help,bonsoir jai besoin daide,17
+ps-query,Tell me about u,18

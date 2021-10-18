@@ -1,0 +1,48 @@
+{
+  "listen": {
+    "port": {
+      "value": 8080,
+      "_doc": "The HTTP server listens on this port"
+    }
+  },
+  "service-log": {
+    "config-path": {
+      "value": "config/service-template-logging.json",
+      "_doc": "the path to the service log config file"
+    },
+    "flushinterval": {
+      "value": 1000,
+      "_doc": "the number of milliseconds to wait before writing buffered log events"
+    }
+  },
+  "request-log": {
+    "output-dir": {
+      "value": "./logs",
+      "_doc": "the base directory in which request logs are written"
+    },
+    "flushinterval": {
+      "value": 1000,
+      "_doc": "the number of milliseconds to wait before writing buffered log events to file"
+    }
+  },
+  "health": {
+    "heartbeat-path": {
+      "value": "heartbeat.txt",
+      "_doc": "Physical path of the file served by the service to indicate its health to the load balancer"
+    }
+  },
+  "modelBuilder":{
+    "redisHosts": {
+      "value": "localhost",
+      "_doc": "Redis Hosts used for celery broker queue"
+    },
+    "redisClusterName": {
+      "value": "mymaster",
+      "_doc": "Redis cluster name used for celery broker queue"
+    },
+    "storage": {
+      "value": "./test/upload, ./test/upload",
+      "_doc": "storage location to store input data as well as model files"
+    }
+  }
+}

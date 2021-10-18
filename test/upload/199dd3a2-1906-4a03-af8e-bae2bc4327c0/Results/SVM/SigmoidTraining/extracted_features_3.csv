@@ -1,0 +1,5 @@
+Utterance,features
+1,drama=1.0,
+8,which=1.0,movie=1.0,which + movie=1.0,
+5,movie + comedy=1.0,movie=1.0,comedy=1.0,
+13,even=1.0,good + even=1.0,good=1.0,

@@ -1,0 +1,6 @@
+Utterance,features
+3,avezvous + un=1.0,un + film + dramatique=1.0,un & dramatique=1.0,un + film=1.0,avezvous & film=1.0,avezvous=1.0,dramatique=1.0,un=1.0,avezvous + un + film=1.0,film=1.0,film + dramatique=1.0,avezvous & dramatique=1.0,
+9,movie + do + you=1.0,what + movie + do=1.0,movie & you=1.0,movie=1.0,want=1.0,do + you=1.0,you + want=1.0,do & want=1.0,movie + do=1.0,do=1.0,what + movie=1.0,do + you + want=1.0,what & do=1.0,what & you=1.0,what=1.0,what & want=1.0,movie & want=1.0,you=1.0,
+6,avezvous & de=1.0,de=1.0,de + comdie=1.0,comdie + dt=1.0,avezvous & film=1.0,avezvous + un + film=1.0,film + de + comdie=1.0,de + comdie + dt=1.0,dt=1.0,avezvous + un=1.0,avezvous & comdie=1.0,de & dt=1.0,un & comdie=1.0,un=1.0,comdie=1.0,un & de=1.0,un + film=1.0,film + de=1.0,film & comdie=1.0,film=1.0,avezvous & dt=1.0,un & dt=1.0,film & dt=1.0,avezvous=1.0,un + film + de=1.0,
+4,comedy=1.0,
+11,good + day=1.0,good=1.0,day=1.0,

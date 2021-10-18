@@ -1,0 +1,22 @@
+{
+  "appenders": {
+    "json": {
+      "type": "node-log4js-json-appender",
+      "layout": {
+        "type": "json"
+      }
+    },
+    "file": {
+      "type": "file",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%d{ISO8601} %c: %p %m"
+      },
+      "filename": "./logs/modelbuilder.log"
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["json", "file"], "level": "INFO"},
+    "SRVR": { "appenders": ["json", "file"], "level": "INFO"}
+  }
+}

@@ -1,0 +1,20 @@
+filename	transcription	tag
+0	what is the weather	none-none
+1	drama	drama
+2	movie drama	drama
+3	Avezvous un film dramatique	drama
+4	comedy	comedy
+5	movie comedy	comedy
+6	Avezvous un film de comdie dt	comedy
+7	Je veux de la comdie	comedy
+8	which movie	movie
+9	what movie do you want	movie
+10	Quels films avezvous	movie
+11	Good day	hello-social
+12	Good afternoon	hello-social
+13	Good evening	hello-social
+14	hi	hello-social
+15	hello	hello-social
+16	Bonjour	hello-social
+17	bonsoir jai besoin daide	help
+18	Tell me about u	ps-query

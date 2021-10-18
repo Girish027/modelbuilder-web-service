@@ -1,0 +1,5 @@
+Utterance,features
+2,drama=1.0,movie=1.0,movie + drama=1.0,
+10,quels & avezvous=1.0,film + avezvous=1.0,quels=1.0,avezvous=1.0,quels + film=1.0,film=1.0,quels + film + avezvous=1.0,
+7,comdie=1.0,de=1.0,je + veux + de=1.0,je + veux=1.0,je & de=1.0,veux + de + la=1.0,veux=1.0,veux & la=1.0,de & comdie=1.0,la + comdie=1.0,veux & comdie=1.0,je & comdie=1.0,veux + de=1.0,la=1.0,de + la=1.0,je & la=1.0,de + la + comdie=1.0,je=1.0,
+12,afternoon=1.0,good + afternoon=1.0,good=1.0,

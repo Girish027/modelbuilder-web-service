@@ -1,0 +1,23 @@
+<?xml version= "1.0"?>
+<grammar mode="voice" root="currency" tag-format="semantics/1.0" version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar">
+<!-- Machine generated - DO NOT EDIT -->
+<!-- _class_currency -->
+	<rule id="currency" scope="public">
+	  <item>
+	    <one-of>
+	      <item>
+	        cent
+	      </item>
+	      <item>
+	        cents
+	      </item>
+	      <item>
+	        dollars
+	      </item>
+	      <item>
+	        dollar
+	      </item>
+	    </one-of>
+	  </item>
+	</rule>
+</grammar>

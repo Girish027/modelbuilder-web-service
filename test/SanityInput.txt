@@ -1,0 +1,393 @@
+intent	transcription	filename
+none-none	what is the weather	
+ps-query	Tell me about u	
+ps-query_accounts	accounts	
+ps-query_accounts	prospects	
+ps-query_accounts	customers	
+ps-query_accounts	current prospects	
+ps-query_accounts	chasing	
+ps-query_accounts	working	
+ps-team	pre sales tam	
+ps-team	ps team	
+ps-team	team	
+ps-team	who are in your team	
+ps-team	who works for you	
+ps-team	members	
+ps-team	team members	
+ps-team	who is in jjs team	
+ps-team	who is in Jeffreys team	
+ps-team	jeffreys team	
+ps-team	jeffreys team	
+jj-query_who	who is JJ	
+jj-query_who	who is jeffrey	
+jj-query_who	who is jeffrey jones	
+jj-query_who	who is jones	
+jj-query_who	who is god	
+jj-query_who	leader	
+jj-query_who	boss	
+jj-query_who	mafia	
+jj-query_who	king	
+jj-query_who	JJ	
+jj-query_who	jeffrey	
+jj-query_who	jeffrey jones	
+jj-query_who	jones	
+jj-query_who	god	
+jj-query_who	tell me about jj	
+jj-query_who	tell me about jeffrey	
+jj-query_who	tell me about jones	
+jj-query_who	tell me about jeffrey jones	
+jj-query_personal	is jj married	
+jj-query_personal	does jj has a girl friend	
+jj-query_personal	jeffrey married	
+jj-query_personal	jeffrey girlfriend	
+jj-query_personal	JJ girlfriend	
+jj-query_education	jeffrey school	
+jj-query_education	where did jeffrey go to school	
+jj-query_education	jjs education	
+jj-query_education	jeffreys education	
+jj-query_education	jones education	
+jj-query_education	jj school	
+jj-query_education	jones school	
+jj-query_education	jeffrey jones school	
+jj-query_education	jeffrey jones education	
+jj-query_education	jj schooling	
+jj-query_education	jones schooling	
+jj-query_education	jeffrey schooling	
+jj-query_education	jeffrey jones schooling	
+jj-query_contact	jjs email	
+jj-query_contact	jj email	
+jj-query_contact	jeffrey email	
+jj-query_contact	jones email	
+jj-query_contact	jeffrey jones email	
+jj-query_contact	jeffreys email	
+jj-query_contact	jjs phone	
+jj-query_contact	jj phone	
+jj-query_contact	jeffrey phone	
+jj-query_contact	jones phone	
+jj-query_contact	jeffrey jones phone	
+jj-query_contact	jeffreys phone	
+jj-query_contact	jjs mobile	
+jj-query_contact	jj mobile	
+jj-query_contact	jeffrey mobile	
+jj-query_contact	jones mobile	
+jj-query_contact	jeffrey jones mobile	
+jj-query_contact	jeffreys mobile	
+jj-query_contact	jjs number	
+jj-query_contact	jj number	
+jj-query_contact	jeffrey number	
+jj-query_contact	jones number	
+jj-query_contact	jeffrey jones number	
+jj-query_contact	jeffreys number	
+jj-query_contact	jjs mobile number	
+jj-query_contact	jj mobile number	
+jj-query_contact	jeffrey mobile  number	
+jj-query_contact	jones mobile  number	
+jj-query_contact	jeffrey jones mobile  number	
+jj-query_contact	jeffreys  mobile  number	
+jj-query_accounts	who are jj prospects	
+jj-query_accounts	who are jeffreys prospects	
+jj-query_accounts	who are jeffrey prospects	
+jj-query_accounts	who are jeffrey jones prospects	
+jj-query_accounts	jj prospects	
+jj-query_accounts	jeffreys prospects	
+jj-query_accounts	jeffrey prospects	
+jj-query_accounts	jeffrey jones prospects	
+jj-query_accounts	jj accounts	
+jj-query_accounts	jeffreys accounts	
+jj-query_accounts	jeffrey accounts	
+jj-query_accounts	jeffrey jones accounts	
+jj-query_accounts	jj customers	
+jj-query_accounts	jeffreys customers	
+jj-query_accounts	jeffrey customers	
+jj-query_accounts	jeffrey jones customers	
+cp-query_who	who is cp	
+cp-query_who	who is Chamath	
+cp-query_who	who is Chamath Perera	
+cp-query_who	who is Perera	
+cp-query_who	cp	
+cp-query_who	Chamath	
+cp-query_who	Chamath Perera	
+cp-query_who	Perera	
+cp-query_who	tell me about cp	
+cp-query_who	tell me about Chamath	
+cp-query_who	tell me about Perera	
+cp-query_who	tell me about Chamath Perera	
+cp-query_personal	is cp married	
+cp-query_personal	does cp has a girl friend	
+cp-query_personal	Chamath married	
+cp-query_personal	Chamath girlfriend	
+cp-query_personal	cp girlfriend	
+cp-query_education	Chamath school	
+cp-query_education	where did Chamath go to school	
+cp-query_education	cps education	
+cp-query_education	Chamaths education	
+cp-query_education	Pereras education	
+cp-query_education	cp school	
+cp-query_education	Perera school	
+cp-query_education	Chamath Perera school	
+cp-query_education	Chamath Perera education	
+cp-query_education	cp schooling	
+cp-query_education	Perera schooling	
+cp-query_education	Chamath schooling	
+cp-query_education	Chamath Perera schooling	
+cp-query_contact	cps email	
+cp-query_contact	cp email	
+cp-query_contact	Chamath email	
+cp-query_contact	Perera email	
+cp-query_contact	Chamath Perera email	
+cp-query_contact	Chamaths email	
+cp-query_contact	cps phone	
+cp-query_contact	cp phone	
+cp-query_contact	Chamath phone	
+cp-query_contact	Perera phone	
+cp-query_contact	Chamath Perera phone	
+cp-query_contact	Chamaths phone	
+cp-query_contact	cps mobile	
+cp-query_contact	cp mobile	
+cp-query_contact	Chamath mobile	
+cp-query_contact	Perera mobile	
+cp-query_contact	Chamath Perera mobile	
+cp-query_contact	Chamaths mobile	
+cp-query_contact	cps number	
+cp-query_contact	cp number	
+cp-query_contact	Chamath number	
+cp-query_contact	Perera number	
+cp-query_contact	Chamath Perera number	
+cp-query_contact	Chamaths number	
+cp-query_contact	cps mobile number	
+cp-query_contact	cp mobile number	
+cp-query_contact	Chamath mobile  number	
+cp-query_contact	Perera mobile  number	
+cp-query_contact	Chamath Perera mobile  number	
+cp-query_contact	Chamaths  mobile  number	
+cp-query_accounts	who are cp prospects	
+cp-query_accounts	who are Chamaths prospects	
+cp-query_accounts	who are Chamath prospects	
+cp-query_accounts	who are Chamath Perera prospects	
+cp-query_accounts	cp prospects	
+cp-query_accounts	Chamaths prospects	
+cp-query_accounts	Chamath prospects	
+cp-query_accounts	Chamath Perera prospects	
+cp-query_accounts	cp accounts	
+cp-query_accounts	Chamaths accounts	
+cp-query_accounts	Chamath accounts	
+cp-query_accounts	Chamath Perera accounts	
+cp-query_accounts	cp customers	
+cp-query_accounts	Chamaths customers	
+cp-query_accounts	Chamath customers	
+cp-query_accounts	Chamath Perera customers	
+norm-query_who	who is norm	
+norm-query_who	who is norm Kayserman	
+norm-query_who	who is Kayserman	
+norm-query_who	russian	
+norm-query_who	russian mafia	
+norm-query_who	fisherman	
+norm-query_who	loves to fish	
+norm-query_who	norm	
+norm-query_who	norm Kayserman	
+norm-query_who	Kayserman	
+norm-query_who	tell me about norm	
+norm-query_who	tell me about Kayserman	
+norm-query_who	tell me about norm Kayserman	
+norm-query_personal	is norm married	
+norm-query_personal	does norm has a girl friend	
+norm-query_personal	norm married	
+norm-query_personal	norm girlfriend	
+norm-query_education	norm school	
+norm-query_education	where did norm go to school	
+norm-query_education	norms education	
+norm-query_education	Kaysermans education	
+norm-query_education	norm school	
+norm-query_education	Kayserman school	
+norm-query_education	norm Kayserman school	
+norm-query_education	norm schooling	
+norm-query_education	Kayserman schooling	
+norm-query_education	norm schooling	
+norm-query_education	norm Kayserman schooling	
+norm-query_contact	norms email	
+norm-query_contact	norm email	
+norm-query_contact	Kayserman email	
+norm-query_contact	norm Kayserman email	
+norm-query_contact	norms email	
+norm-query_contact	norms phone	
+norm-query_contact	norm phone	
+norm-query_contact	Kayserman phone	
+norm-query_contact	norm Kayserman phone	
+norm-query_contact	norms phone	
+norm-query_contact	norm mobile	
+norm-query_contact	Kayserman mobile	
+norm-query_contact	norm Kayserman mobile	
+norm-query_contact	norms mobile	
+norm-query_contact	norms number	
+norm-query_contact	norm number	
+norm-query_contact	Kayserman number	
+norm-query_contact	norm Kayserman number	
+norm-query_contact	norms number	
+norm-query_contact	norms mobile number	
+norm-query_contact	norm mobile number	
+norm-query_contact	Kayserman mobile  number	
+norm-query_contact	norm Kayserman mobile  number	
+norm-query_contact	norms  mobile  number	
+norm-query_accounts	who are norm prospects	
+norm-query_accounts	who are norms prospects	
+norm-query_accounts	who are norms prospects	
+norm-query_accounts	who are norm Kayserman prospects	
+norm-query_accounts	norm prospects	
+norm-query_accounts	norms prospects	
+norm-query_accounts	norm Kayserman prospects	
+norm-query_accounts	norm accounts	
+norm-query_accounts	norms accounts	
+norm-query_accounts	norm Kayserman accounts	
+norm-query_accounts	norm customers	
+norm-query_accounts	norms customers	
+norm-query_accounts	norm Kayserman customers	
+yes-input	affirmativestar	
+yes-input	amen	
+yes-input	fine	
+yes-input	good	
+yes-input	okay	
+yes-input	TRUE	
+yes-input	yea	
+yes-input	all right	
+yes-input	aye	
+yes-input	beyond a doubt	
+yes-input	by all means	
+yes-input	certainly	
+yes-input	definitely	
+yes-input	even so	
+yes-input	exactly	
+yes-input	gladly	
+yes-input	good enough	
+yes-input	granted	
+yes-input	indubitably	
+yes-input	just so	
+yes-input	most assuredly	
+yes-input	naturally	
+yes-input	of course	
+yes-input	positively	
+yes-input	precisely	
+yes-input	sure thing	
+yes-input	surely	
+yes-input	undoubtedly	
+yes-input	unquestionably	
+yes-input	very well	
+yes-input	willingly	
+yes-input	without fail	
+yes-input	yep	
+no-input	negative	
+no-input	nix	
+no-input	absolutely not	
+no-input	by no means	
+no-input	never	
+no-input	no way	
+no-input	not at all	
+no-input	not by any means	
+maybe-input	perchance	
+maybe-input	perhaps	
+maybe-input	as it may be	
+maybe-input	can be	
+maybe-input	conceivable	
+maybe-input	conceivably	
+maybe-input	could be	
+maybe-input	credible	
+maybe-input	feasible	
+maybe-input	imaginably	
+maybe-input	it could be	
+maybe-input	might be	
+maybe-input	obtainable	
+maybe-input	weather permitting	
+swear-mild	Arse	
+swear-mild	Bloody	
+swear-mild	Bugger	
+swear-mild	Cow	
+swear-mild	crap	
+swear-mild	damn	
+swear-mild	darn	
+swear-mild	douche	
+swear-mild	Ginger	
+swear-mild	Git	
+swear-mild	God	
+swear-mild	Goddam	
+swear-mild	Jesus Christ	
+swear-mild	Minger	
+swear-mild	shit	
+swear-mild	Sodoff	
+swear-medium	Arsehole	
+swear-medium	Balls	
+swear-medium	Bint	
+swear-medium	Bollocks	
+swear-medium	Bullshit	
+swear-medium	Feck	
+swear-medium	Munter	
+swear-medium	Pissedpissed off	
+swear-medium	Son of a bitch	
+swear-medium	Tits	
+swear-strong	asshole	
+swear-strong	bastard	
+swear-strong	Beaver	
+swear-strong	Beef curtains	
+swear-strong	Bellend	
+swear-strong	bitch	
+swear-strong	Bloodclaat	
+swear-strong	Clunge	
+swear-strong	cock	
+swear-strong	dick	
+swear-strong	Dickhead	
+swear-strong	fag	
+swear-strong	Fanny	
+swear-strong	Flaps	
+swear-strong	fuck	
+swear-strong	Gash	
+swear-strong	Knob	
+swear-strong	Minge	
+swear-strong	piss	
+swear-strong	Prick	
+swear-strong	Punani	
+swear-strong	pussy	
+swear-strong	slut	
+swear-strong	Snatch	
+swear-strong	Twat	
+swear-strong	cunt	
+swear-strong	motherfucker	
+hello-social	Good day	
+hello-social	Good afternoon	
+hello-social	Good evening	
+pv-query_who	who is PV	
+pv-query_who	pv	
+pv-query_who	pv kannan	
+pv-query_who	kannan	
+kathy-query_who	kathy	
+kathy-query_who	kathy brown	
+kathy-query_who	brown	
+kathy-query_who	data guru	
+kathy-query_who	chief scientist	
+guido-query_who	guido	
+guido-query_who	Schroeder	
+guido-query_who	guido Schroeder	
+guido-query_who	cpo	
+guido-query_who	chief product officer	
+at-query_who	who created you	
+at-query_who	whois daddy	
+at-query_who	who wrote you	
+at-query_who	who is chatbot writer	
+agent-query	customer service representative	
+agent-query	sales representative	
+agent-query	service representative	
+agent-query	attendant	
+agent-query	associate	
+agent-query	operator	
+agent-query	executive	
+agent-query	team member	
+agent-query	your manager	
+agent-query	can I talk to your manager	
+agent-query	Rep	
+agent-query	Agent	
+agent-query	Can I talk to an agent	
+agent-query	CSR	
+agent-query	TSR	
+agent-query	human being	
+agent-query	person	
+agent-query	live person	
+agent-query	I want to talk to a real person	
+agent-query	I want to talk to a live person	
+agent-query	advisore	

@@ -1,0 +1,65 @@
+@Library('jenkins-pipeline-util') _
+
+def notifyMicrosoftTeams(status, channel = 'https://outlook.office.com/webhook/520bb9aa-ef36-4ef7-8fb9-db40ca289444@42fbd5e8-b41c-40ab-9505-9ce8dd91c3e2/JenkinsCI/cabfd192bf5c41a2bc30c0ad20000982/3fde407b-51c9-45bc-afbc-f5f165d26519') {
+  def message = "Build ${status} - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+  office365ConnectorSend message: "${message}", status: "${status}", webhookUrl: "${channel}"
+}
+
+pipeline {
+    agent {
+      docker {
+        image 'nexus.cicd.sv2.247-inc.net:5000/247nodejs-build-centos7:14.16.1'
+        // assume HTTP_PROXY_URL is defined as a jenkins system level env var
+        args "-e HTTP_PROXY=${env.HTTP_PROXY_URL}"
+      }
+    }
+    stages {
+        stage('Install & Build') {
+          steps {
+            sh 'env'
+            script {
+              setupStandardNodeBuild(script: this)
+            }
+          }
+        }
+        stage('Validate & Publish Report') {
+          steps {
+            script {
+              nodeValidate(script: this)
+            }
+          }
+        }
+        stage('Sonar Scan') {
+          steps {
+            script {
+              sonarScan(script: this)
+            }
+          }
+        }
+        stage('Quality Gate'){
+          steps {
+            script {
+              qualityGateTimer()
+            }
+          }
+        }
+        stage('Deploy') {
+          when {
+            branch 'master'
+          }
+          steps {
+            script {
+              nodePruneZipDeploy(script: this)
+            }
+          }
+        }
+    }
+    post {
+      success {
+        notifyMicrosoftTeams('Success')
+      }
+      failure {
+        notifyMicrosoftTeams('Failure')
+      }
+    }
+}

@@ -1,0 +1,8 @@
+Int-index,Intent,pos-utts,neg-utts,pos-SV,neg-SV,norm-wv,neg-SV-dist
+1,drama,3,16,3,16,1.62559492263602,{hello-social=6.0, comedy=4.0, movie=3.0, help=1.0, none-none=1.0, ps-query=1.0}
+5,help,1,18,1,18,0.5737374681855802,{hello-social=6.0, comedy=4.0, drama=3.0, movie=3.0, none-none=1.0, ps-query=1.0}
+0,none-none,1,18,1,16,0.5753881213580965,{hello-social=6.0, movie=3.0, comedy=3.0, drama=2.0, help=1.0, ps-query=1.0}
+3,movie,3,16,3,14,1.5012322073217055,{hello-social=6.0, comedy=3.0, drama=2.0, help=1.0, none-none=1.0, ps-query=1.0}
+2,comedy,4,15,4,15,1.6129327897652785,{hello-social=6.0, drama=3.0, movie=3.0, help=1.0, none-none=1.0, ps-query=1.0}
+6,ps-query,1,18,1,18,0.5737374681855804,{hello-social=6.0, comedy=4.0, drama=3.0, movie=3.0, help=1.0, none-none=1.0}
+4,hello-social,6,13,6,11,2.3758640851909028,{movie=3.0, comedy=3.0, drama=2.0, help=1.0, none-none=1.0, ps-query=1.0}

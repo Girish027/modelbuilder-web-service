@@ -1,0 +1,62 @@
+<?xml version= "1.0"?>
+<grammar mode="voice" root="family" tag-format="semantics/1.0" version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar">
+<!-- Machine generated - DO NOT EDIT -->
+<!-- _class_family -->
+	<rule id="family" scope="public">
+	  <item>
+	    <one-of>
+	      <item>
+	        husband
+	      </item>
+	      <item>
+	        daughter's
+	      </item>
+	      <item>
+	        son's
+	      </item>
+	      <item>
+	        grandson's
+	      </item>
+	      <item>
+	        husband's
+	      </item>
+	      <item>
+	        spouse's
+	      </item>
+	      <item>
+	        spouse
+	      </item>
+	      <item>
+	        huzefa
+	      </item>
+	      <item>
+	        daughter
+	      </item>
+	      <item>
+	        wife
+	      </item>
+	      <item>
+	        wives
+	      </item>
+	      <item>
+	        grandson
+	      </item>
+	      <item>
+	        granddaughter's
+	      </item>
+	      <item>
+	        son
+	      </item>
+	      <item>
+	        spouses
+	      </item>
+	      <item>
+	        wife's
+	      </item>
+	      <item>
+	        granddaughter
+	      </item>
+	    </one-of>
+	  </item>
+	</rule>
+</grammar>

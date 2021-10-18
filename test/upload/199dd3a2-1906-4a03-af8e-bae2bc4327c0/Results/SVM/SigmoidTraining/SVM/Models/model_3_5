@@ -1,0 +1,25 @@
+SVM-light Version V6.02
+0 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+114 # highest feature index 
+14 # number of training documents 
+15 # number of support vectors plus 1 
+0.96165262 # threshold b, each following line is a SV (starting with alpha*y)
+-0.0095868445153314829632051896624034 85:1 86:1 87:1 # 11,good,day,good + day,
+-0.0095868445153314829632051896624034 85:1 112:1 113:1 # 12,good,afternoon,good + afternoon,
+-0.038347378061325931852820758649614 88:1 # 14,hi,
+-0.038347378061325931852820758649614 114:1 # 15,hello,
+-0.0031956148384438276544017298874678 13:1 14:1 15:1 16:1 17:1 18:1 19:1 20:1 21:1 22:1 23:1 24:1 # 17,bonsoir,jai,besoin,daide,bonsoir + jai,jai + besoin,besoin + daide,bonsoir + jai + besoin,jai + besoin + daide,bonsoir & besoin,bonsoir & daide,jai & daide,
+0.16347105182822285751598201386514 73:1 74:1 75:1 76:1 77:1 78:1 79:1 80:1 81:1 82:1 83:1 84:1 # 18,tell,me,about,u,tell + me,me + about,about + u,tell + me + about,me + about + u,tell & about,tell & u,me & u,
+-0.0030816959410611775155297564765533 25:1 26:1 27:1 28:1 29:1 30:1 31:1 32:1 33:1 34:1 35:1 36:1 # 0,what,be,the,weather,what + be,be + the,the + weather,what + be + the,be + the + weather,what & the,what & weather,be & weather,
+-0.012361497035488536525016378675446 37:1 89:1 90:1 # 2,movie,drama,movie + drama,
+-0.0021911976717973119868632103646178 1:1 2:1 3:1 4:1 5:1 6:1 7:1 8:1 9:1 10:1 11:1 12:1 # 3,avezvous,un,film,dramatique,avezvous + un,un + film,film + dramatique,avezvous + un + film,un + film + dramatique,avezvous & film,avezvous & dramatique,un & dramatique,
+-0.038347378061325931852820758649614 72:1 # 4,comedy,
+-0.00037757921803839263660135250333383 1:1 2:1 3:1 5:1 6:1 8:1 10:1 54:1 55:1 56:1 57:1 58:1 59:1 60:1 61:1 62:1 63:1 64:1 65:1 66:1 67:1 68:1 69:1 70:1 71:1 # 6,avezvous,un,film,avezvous + un,un + film,avezvous + un + film,avezvous & film,de,comdie,dt,film + de,de + comdie,comdie + dt,un + film + de,film + de + comdie,de + comdie + dt,avezvous & de,avezvous & comdie,avezvous & dt,un & de,un & comdie,un & dt,film & comdie,film & dt,de & dt,
+-0.0020797812171477409251552082025682 54:1 55:1 96:1 97:1 98:1 99:1 100:1 101:1 102:1 103:1 104:1 105:1 106:1 107:1 108:1 109:1 110:1 111:1 # 7,de,comdie,je,veux,la,je + veux,veux + de,de + la,la + comdie,je + veux + de,veux + de + la,de + la + comdie,je & de,je & la,je & comdie,veux & la,veux & comdie,de & comdie,
+-0.0047049757367447287217943063808434 1:1 3:1 91:1 92:1 93:1 94:1 95:1 # 10,avezvous,film,quels,quels + film,film + avezvous,quels + film + avezvous,quels & avezvous,
+-0.0012628869548603292166655265305053 25:1 37:1 38:1 39:1 40:1 41:1 42:1 43:1 44:1 45:1 46:1 47:1 48:1 49:1 50:1 51:1 52:1 53:1 # 9,what,movie,do,you,want,what + movie,movie + do,do + you,you + want,what + movie + do,movie + do + you,do + you + want,what & do,what & you,what & want,movie & you,movie & want,do & want,

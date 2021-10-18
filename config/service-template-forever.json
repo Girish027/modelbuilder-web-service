@@ -1,0 +1,10 @@
+{
+  "command": "node --use_strict",
+  "script": "index.js",
+  "args": ["--config", "config/service-template.json"],
+  "logFile": "forever.log",
+  "append": true,
+  "killSignal": "SIGTERM",
+  "path": "/var/tmp/forever"
+}
+

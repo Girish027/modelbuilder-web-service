@@ -1,0 +1,32 @@
+intent,metadata,transcripts
+none-none,,what is the weather
+ps-query,,Tell me about u
+ps-query_accounts,,accounts;prospects;customers;current prospects;chasing;working
+ps-team,,pre sales tam;ps team;team;who are in your team;who works for you;members;team members;who is in jj's team;who is in Jeffreys team;jeffrey's team;jeffreys team
+jj-query_who,,who is JJ;who is jeffrey;who is jeffrey jones;who is jones;who is god;leader;boss;mafia;king;JJ;jeffrey;jeffrey jones;jones;god;tell me about jj;tell me about jeffrey;tell me about jones;tell me about jeffrey jones
+jj-query_personal,,is jj married;does jj has a girl friend;jeffrey married;jeffrey girlfriend;JJ girlfriend
+jj-query_education,,jeffrey school;where did jeffrey go to school;jj's education;jeffrey's education;jone's education;jj school;jones school;jeffrey jones school;jeffrey jones education;jj schooling;jones schooling;jeffrey schooling;jeffrey jones schooling
+jj-query_contact,,jj's email;jj email;jeffrey email;jones email;jeffrey jones email;jeffrey's email;jj's phone;jj phone;jeffrey phone;jones phone;jeffrey jones phone;jeffrey's phone;jj's mobile;jj mobile;jeffrey mobile;jones mobile;jeffrey jones mobile;jeffrey's mobile;jj's number;jj number;jeffrey number;jones number;jeffrey jones number;jeffrey's number;jj's mobile number;jj mobile number;jeffrey mobile  number;jones mobile  number;jeffrey jones mobile  number;jeffrey's  mobile  number
+jj-query_accounts,,who are jj prospects;who are jeffreys prospects;who are jeffrey prospects;who are jeffrey jones prospects;jj prospects;jeffreys prospects;jeffrey prospects;jeffrey jones prospects;jj accounts;jeffreys accounts;jeffrey accounts;jeffrey jones accounts;jj customers;jeffreys customers;jeffrey customers;jeffrey jones customers
+cp-query_who,,who is cp;who is Chamath;who is Chamath Perera;who is Perera;cp;Chamath;Chamath Perera;Perera;tell me about cp;tell me about Chamath;tell me about Perera;tell me about Chamath Perera
+cp-query_personal,,is cp married;does cp has a girl friend;Chamath married;Chamath girlfriend;cp girlfriend
+cp-query_education,,Chamath school;where did Chamath go to school;cp's education;Chamath's education;Perera's education;cp school;Perera school;Chamath Perera school;Chamath Perera education;cp schooling;Perera schooling;Chamath schooling;Chamath Perera schooling
+cp-query_contact,,cp's email;cp email;Chamath email;Perera email;Chamath Perera email;Chamath's email;cp's phone;cp phone;Chamath phone;Perera phone;Chamath Perera phone;Chamath's phone;cp's mobile;cp mobile;Chamath mobile;Perera mobile;Chamath Perera mobile;Chamath's mobile;cp's number;cp number;Chamath number;Perera number;Chamath Perera number;Chamath's number;cp's mobile number;cp mobile number;Chamath mobile  number;Perera mobile  number;Chamath Perera mobile  number;Chamath's  mobile  number
+cp-query_accounts,,who are cp prospects;who are Chamaths prospects;who are Chamath prospects;who are Chamath Perera prospects;cp prospects;Chamaths prospects;Chamath prospects;Chamath Perera prospects;cp accounts;Chamaths accounts;Chamath accounts;Chamath Perera accounts;cp customers;Chamaths customers;Chamath customers;Chamath Perera customers
+norm-query_who,,who is norm;who is norm Kayserman;who is Kayserman;russian;russian mafia;fisherman;loves to fish;norm;norm Kayserman;Kayserman;tell me about norm;tell me about Kayserman;tell me about norm Kayserman
+norm-query_personal,,is norm married;does norm has a girl friend;norm married;norm girlfriend
+norm-query_education,,norm school;where did norm go to school;norm's education;Kayserman's education;norm school;Kayserman school;norm Kayserman school;norm schooling;Kayserman schooling;norm schooling;norm Kayserman schooling
+norm-query_contact,,norm's email;norm email;Kayserman email;norm Kayserman email;norm's email;norm's phone;norm phone;Kayserman phone;norm Kayserman phone;norm's phone;norm mobile;Kayserman mobile;norm Kayserman mobile;norm's mobile;norm's number;norm number;Kayserman number;norm Kayserman number;norm's number;norm's mobile number;norm mobile number;Kayserman mobile  number;norm Kayserman mobile  number;norm's  mobile  number
+norm-query_accounts,,who are norm prospects;who are norms prospects;who are norm's prospects;who are norm Kayserman prospects;norm prospects;norms prospects;norm Kayserman prospects;norm accounts;norms accounts;norm Kayserman accounts;norm customers;norms customers;norm Kayserman customers
+yes-input,,affirmativestar;amen;fine;good;okay;true;yea;all right;aye;beyond a doubt;by all means;certainly;definitely;even so;exactly;gladly;good enough;granted;indubitably;just so;most assuredly;naturally;of course;positively;precisely;sure thing;surely;undoubtedly;unquestionably;very well;willingly;without fail;yep
+no-input,,negative;nix;absolutely not;by no means;never;no way;not at all;not by any means
+maybe-input,,perchance;perhaps;as it may be;can be;conceivable;conceivably;could be;credible;feasible;imaginably;it could be;might be;obtainable;weather permitting
+swear-mild,,Arse;Bloody;Bugger;Cow;crap;damn;darn;douche;Ginger;Git;God;Goddam;Jesus Christ;Minger;shit;Sod-off
+swear-medium,,Arsehole;Balls;Bint;Bollocks;Bullshit;Feck;Munter;Pissed/pissed off;Son of a bitch;Tits
+swear-strong,,asshole;bastard;Beaver;Beef curtains;Bellend;bitch;Bloodclaat;Clunge;cock;dick;Dickhead;fag;Fanny;Flaps;fuck;Gash;Knob;Minge;piss;Prick;Punani;pussy;slut;Snatch;Twat;cunt;motherfucker
+hello-social,,Good day;Good afternoon;Good evening
+pv-query_who,,who is PV;pv;pv kannan;kannan
+kathy-query_who,,kathy;kathy brown;brown;data guru;chief scientist
+guido-query_who,,guido;Schroeder;guido Schroeder;cpo;chief product officer
+at-query_who,,who created you;whois daddy;who wrote you;who is chatbot writer
+agent-query,,customer service representative;sales representative;service representative;attendant;associate;operator;executive;team member;your manager;can I talk to your manager;Rep;Agent;Can I talk to an agent;CSR;TSR;human being;person;live person;I want to talk to a real person;I want to talk to a live person;advisore

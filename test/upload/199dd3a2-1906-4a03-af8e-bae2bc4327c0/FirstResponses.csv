@@ -1,0 +1,20 @@
+Filename	Utterance	tag	Acoustic Quality	Original Utterance
+0	what is the weather	none-none	Good	what is the weather
+1	drama	drama	Good	drama
+2	movie drama	drama	Good	movie drama
+3	avezvous un film dramatique	drama	Good	Avezvous un film dramatique
+4	comedy	comedy	Good	comedy
+5	movie comedy	comedy	Good	movie comedy
+6	avezvous un film de comdie dt	comedy	Good	Avezvous un film de comdie dt
+7	je veux de la comdie	comedy	Good	Je veux de la comdie
+8	which movie	movie	Good	which movie
+9	what movie do you want	movie	Good	what movie do you want
+10	quels films avezvous	movie	Good	Quels films avezvous
+11	good day	hello-social	Good	Good day
+12	good afternoon	hello-social	Good	Good afternoon
+13	good evening	hello-social	Good	Good evening
+14	hi	hello-social	Good	hi
+15	hello	hello-social	Good	hello
+16	bonjour	hello-social	Good	Bonjour
+17	bonsoir jai besoin daide	help	Good	bonsoir jai besoin daide
+18	tell me about u	ps-query	Good	Tell me about u

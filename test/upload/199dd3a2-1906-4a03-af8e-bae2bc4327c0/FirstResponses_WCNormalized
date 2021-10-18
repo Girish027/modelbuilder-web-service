@@ -1,0 +1,19 @@
+0	what is the weather	none-none	none-none
+1	drama	drama	drama
+2	movie drama	drama	drama
+3	avezvous un film dramatique	drama	drama
+4	comedy	comedy	comedy
+5	movie comedy	comedy	comedy
+6	avezvous un film de comdie dt	comedy	comedy
+7	je veux de la comdie	comedy	comedy
+8	which movie	movie	movie
+9	what movie do you want	movie	movie
+10	quels films avezvous	movie	movie
+11	good day	hello-social	hello-social
+12	good afternoon	hello-social	hello-social
+13	good evening	hello-social	hello-social
+14	hi	hello-social	hello-social
+15	hello	hello-social	hello-social
+16	bonjour	hello-social	hello-social
+17	bonsoir jai besoin daide	help	help
+18	tell me about u	ps-query	ps-query

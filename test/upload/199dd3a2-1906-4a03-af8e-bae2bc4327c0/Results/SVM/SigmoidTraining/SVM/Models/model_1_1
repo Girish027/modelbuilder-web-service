@@ -1,0 +1,20 @@
+SVM-light Version V6.02
+0 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+39 # highest feature index 
+10 # number of training documents 
+10 # number of support vectors plus 1 
+0.79210726 # threshold b, each following line is a SV (starting with alpha*y)
+-0.051973184853429832408266975107836 29:1 30:1 31:1 # 12,good,afternoon,good + afternoon,
+-0.011549596634095517927454110918006 11:1 12:1 13:1 14:1 15:1 16:1 17:1 18:1 19:1 20:1 21:1 22:1 23:1 24:1 25:1 26:1 27:1 28:1 # 7,je,veux,de,la,comdie,je + veux,veux + de,de + la,la + comdie,je + veux + de,veux + de + la,de + la + comdie,je & de,je & la,je & comdie,veux & la,veux & comdie,de & comdie,
+-0.24157943082060817641121275300975 1:1 2:1 3:1 # 2,movie,drama,movie + drama,
+-0.051973184853429832408266975107836 29:1 37:1 38:1 # 13,good,even,good + even,
+-0.20789273941371932963306790043134 32:1 # 15,hello,
+0.75842167285172212842780936625786 1:1 33:1 34:1 # 8,movie,which,which + movie,
+0.2560153229408971831126962115377 4:1 5:1 6:1 7:1 8:1 9:1 10:1 # 10,quels,film,avezvous,quels + film,film + avezvous,quels + film + avezvous,quels & avezvous,
+-0.24157832714827781606103940248431 1:1 35:1 36:1 # 5,movie,comedy,movie + comedy,
+-0.20789273941371932963306790043134 39:1 # 16,bonjour,

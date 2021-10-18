@@ -1,0 +1,341 @@
+<?xml version= "1.0"?>
+<grammar mode="voice" root="location_domestic" tag-format="semantics/1.0" version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar">
+<!-- Machine generated - DO NOT EDIT -->
+<!-- _class_location_domestic -->
+	<rule id="location_domestic" scope="public">
+	  <item>
+	    <one-of>
+	      <item>
+	        dallas
+	      </item>
+	      <item>
+	        vermont
+	      </item>
+	      <item>
+	        tucson
+	      </item>
+	      <item>
+	        wyoming
+	      </item>
+	      <item>
+	        nebraska
+	      </item>
+	      <item>
+	        buffalo
+	      </item>
+	      <item>
+	        kahului
+	      </item>
+	      <item>
+	        palm springs
+	      </item>
+	      <item>
+	        houston
+	      </item>
+	      <item>
+	        new york
+	      </item>
+	      <item>
+	        wisconsin
+	      </item>
+	      <item>
+	        denver
+	      </item>
+	      <item>
+	        north carolina
+	      </item>
+	      <item>
+	        missouri
+	      </item>
+	      <item>
+	        maryland
+	      </item>
+	      <item>
+	        vegas
+	      </item>
+	      <item>
+	        boston
+	      </item>
+	      <item>
+	        east coast
+	      </item>
+	      <item>
+	        kapalua
+	      </item>
+	      <item>
+	        hilton head
+	      </item>
+	      <item>
+	        albuquerque
+	      </item>
+	      <item>
+	        cleveland
+	      </item>
+	      <item>
+	        california
+	      </item>
+	      <item>
+	        phoenix
+	      </item>
+	      <item>
+	        washington
+	      </item>
+	      <item>
+	        connecticut
+	      </item>
+	      <item>
+	        minnesota
+	      </item>
+	      <item>
+	        west coast
+	      </item>
+	      <item>
+	        virginia
+	      </item>
+	      <item>
+	        new jersey
+	      </item>
+	      <item>
+	        manhattan
+	      </item>
+	      <item>
+	        boise
+	      </item>
+	      <item>
+	        nevada
+	      </item>
+	      <item>
+	        new mexico
+	      </item>
+	      <item>
+	        ohio
+	      </item>
+	      <item>
+	        new orleans
+	      </item>
+	      <item>
+	        massachusetts
+	      </item>
+	      <item>
+	        illinois
+	      </item>
+	      <item>
+	        alaska
+	      </item>
+	      <item>
+	        nashville
+	      </item>
+	      <item>
+	        tennessee
+	      </item>
+	      <item>
+	        yellowstone
+	      </item>
+	      <item>
+	        anchorage
+	      </item>
+	      <item>
+	        kentucky
+	      </item>
+	      <item>
+	        san diego
+	      </item>
+	      <item>
+	        cincinnati
+	      </item>
+	      <item>
+	        chicago
+	      </item>
+	      <item>
+	        georgia
+	      </item>
+	      <item>
+	        district of columbia
+	      </item>
+	      <item>
+	        michigan
+	      </item>
+	      <item>
+	        pittsburgh
+	      </item>
+	      <item>
+	        oklahoma
+	      </item>
+	      <item>
+	        salt lake
+	      </item>
+	      <item>
+	        n y c
+	      </item>
+	      <item>
+	        utah
+	      </item>
+	      <item>
+	        baltimore
+	      </item>
+	      <item>
+	        portland
+	      </item>
+	      <item>
+	        idaho
+	      </item>
+	      <item>
+	        montana
+	      </item>
+	      <item>
+	        nantucket
+	      </item>
+	      <item>
+	        seattle
+	      </item>
+	      <item>
+	        alabama
+	      </item>
+	      <item>
+	        south dakota
+	      </item>
+	      <item>
+	        hawaii
+	      </item>
+	      <item>
+	        colorado
+	      </item>
+	      <item>
+	        fort lauderdale
+	      </item>
+	      <item>
+	        santa barbara
+	      </item>
+	      <item>
+	        los angeles
+	      </item>
+	      <item>
+	        aspen
+	      </item>
+	      <item>
+	        new england
+	      </item>
+	      <item>
+	        indiana
+	      </item>
+	      <item>
+	        the district of columbia
+	      </item>
+	      <item>
+	        charleston
+	      </item>
+	      <item>
+	        niagara falls
+	      </item>
+	      <item>
+	        las vegas
+	      </item>
+	      <item>
+	        ithaca
+	      </item>
+	      <item>
+	        vail
+	      </item>
+	      <item>
+	        new hampshire
+	      </item>
+	      <item>
+	        honolulu
+	      </item>
+	      <item>
+	        mississippi
+	      </item>
+	      <item>
+	        texas
+	      </item>
+	      <item>
+	        new york city
+	      </item>
+	      <item>
+	        tampa
+	      </item>
+	      <item>
+	        iowa
+	      </item>
+	      <item>
+	        rhode island
+	      </item>
+	      <item>
+	        d c
+	      </item>
+	      <item>
+	        north dakota
+	      </item>
+	      <item>
+	        orlando
+	      </item>
+	      <item>
+	        detroit
+	      </item>
+	      <item>
+	        washington d c
+	      </item>
+	      <item>
+	        salt lake city
+	      </item>
+	      <item>
+	        kansas
+	      </item>
+	      <item>
+	        miami
+	      </item>
+	      <item>
+	        san francisco
+	      </item>
+	      <item>
+	        orange county
+	      </item>
+	      <item>
+	        south carolina
+	      </item>
+	      <item>
+	        florida
+	      </item>
+	      <item>
+	        arizona
+	      </item>
+	      <item>
+	        arkansas
+	      </item>
+	      <item>
+	        atlanta
+	      </item>
+	      <item>
+	        newark
+	      </item>
+	      <item>
+	        san antonio
+	      </item>
+	      <item>
+	        key west
+	      </item>
+	      <item>
+	        l a
+	      </item>
+	      <item>
+	        pennsylvania
+	      </item>
+	      <item>
+	        syracuse
+	      </item>
+	      <item>
+	        tulsa
+	      </item>
+	      <item>
+	        maine
+	      </item>
+	      <item>
+	        atlantic city
+	      </item>
+	      <item>
+	        oregon
+	      </item>
+	    </one-of>
+	  </item>
+	</rule>
+</grammar>

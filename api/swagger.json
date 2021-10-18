@@ -1,0 +1,592 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "modelbuilder",
+    "description": "Generates web2NL model using DSG workbench",
+    "version": "1.0"
+  },
+  "basePath": "/v1",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "parameters": {
+    "sessionid": {
+      "name": "sessionid",
+      "description": "Specifies the downstream client's session UUID.",
+      "in": "query",
+      "type": "string"
+    },
+    "requestid": {
+      "name": "requestid",
+      "description": "Specifies the downstream client's per-request UUID.",
+      "in": "query",
+      "type": "string"
+    },
+    "log_string": {
+      "name": "log_string",
+      "description": "Specifies an arbitrary logging string provided by the downstream client.",
+      "in": "query",
+      "type": "string"
+    },
+    "sessionid_header": {
+      "name": "X-TFS-SessionId",
+      "description": "Specifies the downstream client's session UUID.",
+      "in": "header",
+      "type": "string"
+    },
+    "requestid_header": {
+      "name": "X-TFS-RequestId",
+      "description": "Specifies the downstream client's per-request UUID.",
+      "in": "header",
+      "type": "string"
+    },
+    "log_string_header": {
+      "name": "X-TFS-LogString",
+      "description": "Specifies an arbitrary logging string provided by the downstream client.",
+      "in": "header",
+      "type": "string"
+    }
+  },
+  "responses": {
+    "BadRequest": {
+      "description": "The request was invalid. For example, the input file is not in valid format",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "NotFound": {
+      "description": "The resource was not found",
+      "schema": {
+        "type": "string"
+      }
+    }
+  },
+  "paths": {
+    "/modelbuilder": {
+      "post": {
+        "summary": "Submit training data for model building",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "generateModel",
+        "consumes": [
+          "multipart/form-data",
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "trainingFile",
+            "in": "formData",
+            "description": "Training data (in .tsv)",
+            "type": "file",
+            "x-mimetype": "application/csv",
+            "required": false
+          },{
+            "name": "configuration",
+            "in": "formData",
+            "description": "Configuration files",
+            "x-mimetype": "application/json",
+            "type": "file"
+          },{
+            "name": "customWordclassFile",
+            "in": "formData",
+            "description": "custom word class file",
+            "x-mimetype": "text/plain",
+            "type": "file"
+          },{
+            "name": "modelType",
+            "in": "query",
+            "description": "Specifies the type of model to be generated",
+            "default": "classifier",
+            "enum": [
+              "classifier",
+              "normalization",
+              "speech"
+            ],
+            "required": true,
+            "type": "string"
+          },{
+            "name": "isUnbundled",
+            "in": "query",
+            "description": "Specifies the type of model to be generated",
+            "default": "false",
+            "enum": [
+              "true",
+              "false"
+            ],
+            "required": false,
+            "type": "string"
+          },{
+            "name": "encodingType",
+            "in": "query",
+            "description": "Specifies the encoding type for uploaded file",
+            "default": "UTF-8",
+            "enum": [
+              "UTF-8"
+            ],
+            "required": true,
+            "type": "string"
+          },{
+            "name": "tfClient",
+            "in": "query",
+            "description": "Specifies the client name given for the model hosted in TFX sering",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "modelTechnology",
+            "in": "query",
+            "description": "Specifies the technology type being used",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "modelName",
+            "in": "query",
+            "description": "Specifies the name of the model given in TFX serving",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "vectorizerVersion",
+            "in": "query",
+            "description": "Specifies the Technology version label being used",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Training data has been submitted successfully for model building",
+            "schema": {
+              "$ref": "#/definitions/ModelGeneratorResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}": {
+      "get": {
+        "summary": "Downloads web2NL model generated by workbench as well as speech model if applicable",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      },
+      "delete":{
+        "summary": "Deletes generated web2nl model, along with training data and outputs ",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "deleteModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      },
+      "patch":{
+        "summary": "Add speech support on existing digital model",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "addSpeechSupport",
+        "consumes": [
+          "multipart/form-data",
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          },{
+            "name": "customWordclassFile",
+            "in": "formData",
+            "description": "custom word class file",
+            "x-mimetype": "text/plain",
+            "type": "file"
+          },{
+            "name": "isUnbundled",
+            "in": "query",
+            "description": "Specifies the type of model to be generated",
+            "default": "false",
+            "enum": [
+              "true",
+              "false"
+            ],
+            "required": false,
+            "type": "string"
+          },{
+            "name": "digitalHostedUrl",
+            "in": "query",
+            "description": "Specifies the digital hosted url for speech model building",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "trainingFile",
+            "in": "formData",
+            "description": "Training data",
+            "type": "file",
+            "x-mimetype": "application/csv",
+            "required": false
+          },{
+            "name": "modelType",
+            "in": "query",
+            "description": "Specifies the type of model to be generated",
+            "default": "speech",
+            "enum": [
+              "combine",
+              "speech"
+            ],
+            "required": false,
+            "type": "string"
+          },{
+            "name": "tfClient",
+            "in": "query",
+            "description": "Specifies the client name given for the model hosted in TFX sering",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "modelTechnology",
+            "in": "query",
+            "description": "Specifies the technology type being used",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "modelName",
+            "in": "query",
+            "description": "Specifies the name of the model given in TFX serving",
+            "required": false,
+            "type": "string"
+          },{
+            "name": "vectorizerVersion",
+            "in": "query",
+            "description": "Specifies the Technology version label being used",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Training data has been submitted successfully for model building",
+            "schema": {
+              "$ref": "#/definitions/ModelGeneratorResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/status": {
+      "get": {
+        "summary": "Provides status on model building process",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getModelStatus",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/digital": {
+      "get": {
+        "summary": "Downloads digital web2NL model generated by workbench",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getDigitalModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/speech": {
+      "get": {
+        "summary": "Downloads speech model",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getSpeechModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/slm": {
+      "get": {
+        "summary": "Downloads SLM model",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getSLMModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/inter.cfg": {
+      "get": {
+        "summary": "Downloads SLM model inter.cfg",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getInterCfgModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/Fold_1.cfg": {
+      "get": {
+        "summary": "Downloads speech model",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getSpeechModel",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/statistics": {
+      "get": {
+        "summary": "Provides statistics on model generated by workbench",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getModelStatistics",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "The model ID."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/externalStatistics": {
+      "get": {
+        "summary": "Provides external statistics on model generated by workbench",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getExternalModelStatistics",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "The model ID."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/grxml/{filename}": {
+      "get": {
+        "summary": "Downloads GRXML files generated during model training",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getGRXML",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Model ID"
+          },
+          {
+            "in": "path",
+            "name": "filename",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "Name of the file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      }
+    },
+    "/modelbuilder/{id}/training-outputs": {
+      "get": {
+        "summary": "Provides results and other intermediate files generated by workbench",
+        "x-swagger-router-controller": "modelBuilder",
+        "operationId": "getTrainingOutputs",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "minimum": 1,
+            "description": "The model ID."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400":{
+            "description": "Model id not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ModelGeneratorResponse": {
+      "description": "The model generated response payload",
+      "properties": {
+        "link": {
+          "type": "string"
+        }
+      }
+    },
+    "ErrorResponse": {
+      "properties": {
+        "code": {
+          "description": "A status code",
+          "type": "string"
+        },
+        "reason": {
+          "description": "A descriptive message",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
